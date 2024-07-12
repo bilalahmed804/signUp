@@ -1262,17 +1262,6 @@ function main(){
          timer: 1500
         });
       }
-
-    let data = document.getElementById("drop");
-
-    for(let i = 0; i <  recipes.length; i++){
-      data.innerHTML += `<option id="main">${recipes[i].name}</option>`
-
-    }
-    data.addEventListener("click",function(){
-      let text = document.getElementById('main');
-  
-})
 function clickHandler(){
 let input = document.getElementById("myinput");
 
@@ -1299,27 +1288,6 @@ for (let i = 0; i < recipes.length; i++) {
 
 input.value = "";
 }
-document.getElementById("drop").addEventListener("change",()=>{
-for (let i = 0; i < recipes.length; i++) {
-  let element = recipes[i].name;
-  // console.log(recipes[i].name);
-  let drop1 = document.getElementById("drop");
-  console.log(drop1);
-console.log(element);
-    if(element.toLowerCase() == drop1.value.toLowerCase()){
-      document.getElementById("foods").innerHTML += `<div class="card"><img class="cardimge" src="${recipes[i].image}" alt="image">
-      <h4>${recipes[i].name}</h4>
-      <p>Calories<b>:</b> ${recipes[i].caloriesPerServing}</p>
-      <p>Food ready in ${recipes[i].cookTimeMinutes} minutes</p>
-      <p>Size<b>:</b> ${recipes[i].difficulty}</p>
-      <p>Review<b>:</b> ${recipes[i].reviewCount}<p/>
-      <button class="button">Add to Card<button>
-      </div>`
-  
-    
-  }
-}
-})
 
 
   
