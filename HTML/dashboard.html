@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Dashboard</h1>
+    <div class="head">
+
+        <div class="fancy">
+            <input id="myinput" type="text" placeholder="Enter Your Foods">
+            <button onclick="clickHandler()"><i style="font-size:24px" class="fa">&#xf002;</i></button>
+        </div>
+    </div>
+    <div id="foods">
+
+    </div>
+    <script>
+       window.onload = function(){
+        let valueTrue = localStorage.getItem("check")
+        if(valueTrue !== "true")
+        {
+            alert("You must be create account in to view this page")
+            window.location.href = "../index.html"
+        
+        }
+       }
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../JS/dashboard.js"></script>
+</html>

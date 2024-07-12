@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 42px;
+    text-align: center;
+}
+.cardimge{
+    width: 250px;
+    height: 250px;
+   
+}
+#foods{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+p{
+    font-family:Arial, Helvetica, sans-serif}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffbc02;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #ffc72d;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.fancy input{
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+}
+
+.fancy button{
+    padding: 5px 9px ;
+    padding-bottom: 13px;
+    text-align: center;
+    border: none;
+    background-color: #ffbc02;
+    color: white;
+    cursor: pointer;
+}
+.fancy> button:hover{
+    background-color: #ffc72d;
+}
